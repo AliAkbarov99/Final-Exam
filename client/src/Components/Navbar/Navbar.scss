@@ -1,0 +1,106 @@
+#navbar{
+    padding: 0px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    .navbar__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px;
+        border-bottom: 1px solid #d3d5e2;
+
+        .navbar__top__left{
+            display: flex;
+            align-items: center;
+
+            h3{
+                font-weight: 500;
+                font-size: 16px;
+                color: rgb(0, 48, 114);
+            }
+
+            span{
+                color: rgb(76, 82, 110);
+            }
+        }
+
+        .navbar__top__right{
+            display: flex;
+            gap: 20px;
+
+            i{
+                cursor: pointer;
+                color: #003072;
+            }
+        }
+    }
+
+    .navbar__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px;
+        
+
+        .navbar__bottom__left{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+
+            .navbar__bottom__left__links{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                a{
+                    color: #183072;
+                text-decoration: none;
+                font-size: 18px;
+                }
+            }
+        }
+
+        .navbar__bottom__right{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .navbar__bottom__right__button{
+                
+                button{
+                    color: rgb(49,110,194);
+                    border: 2px solid rgb(49,110,194);
+                    font-weight: 500;
+                    font-size: 17px;
+                    padding: 12px 30px;
+                    cursor: pointer;
+                    background-color: white;
+                    transition: 0.3s all ease;
+
+                    &:hover{
+                        color: white;
+                        background-color: rgb(49,110,194);
+                    }
+                }
+            }
+
+            .navbar__bottom__right__contact{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                span{
+                    color: rgb(177,164,172);
+                }
+
+                p{
+                    color: rgb(0,48,114);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

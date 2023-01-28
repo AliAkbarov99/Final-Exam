@@ -1,0 +1,284 @@
+#intro {
+  margin-top: 132px;
+  background-image: url("https://preview.colorlib.com/theme/itlock/assets/img/hero/h1_hero1.jpg.webp");
+  height: 700px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .intro__text {
+      width: 550px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      div {
+        width: 120px;
+        height: 5px;
+        background-color: white;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      h1 {
+        font-size: 72px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+      }
+
+      button {
+        width: 200px;
+        padding: 20px 0px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#industry {
+  margin-top: 100px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .industry__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+
+    h1 {
+      font-family: "Rubik", sans-serif;
+      font-weight: 600;
+      color: rgb(0, 48, 114);
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    P {
+      font-weight: 400;
+      color: rgb(109, 110, 198);
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: rgb(76, 82, 110);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  .industry__items {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    .industry__items__card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      background-color: rgb(233, 242, 255);
+
+      .industry__items__card__text {
+        p {
+          font-size: 20px;
+          text-align: center;
+          width: 200px;
+          line-height: 30px;
+          color: rgb(0, 48, 114);
+          font-family: "Rubik", sans-serif;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+#insights {
+  margin-top: 150px;
+
+  .container {
+    display: flex;
+
+    .insights__left {
+      display: flex;
+      padding: 70px 100px;
+      flex-direction: column;
+      background-color: #003072;
+      color: white;
+
+      h2 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 45px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 40px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+
+      button {
+        margin-top: 40px;
+        width: 180px;
+        padding: 15px 0px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        box-sizing: content-box;
+
+        &:hover {
+          background-color: #316ec2;
+          border-color: #316ec2;
+        }
+      }
+    }
+    .insights__right {
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+#discussion {
+  margin-top: 150px;
+  padding: 100px 550px;
+  background-color: rgb(0, 48, 114);
+  color: white;
+
+  h1 {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  div {
+    text-align: center;
+    margin-top: 30px;
+
+    button {
+      padding: 20px 70px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: white;
+      background-color: rgb(49, 110, 194);
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+#brands {
+  margin-top: 100px;
+  .brands__header {
+    div button{
+      padding: 10px 20px;
+      cursor: pointer;
+      color: rgb(95, 152, 212);
+      border-radius: 5px;
+      border: 1px solid rgb(95, 152, 212);
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    p {
+      text-align: center;
+      letter-spacing: 2.8px;
+      color: rgb(95, 152, 212);
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      color: rgb(0, 48, 114);
+      font-size: 38px;
+    }
+    div {
+      text-align: center;
+      margin-top: 20px;
+
+      input {
+        border: 1px solid #003072;
+        padding: 10px 20px;
+        outline: none;
+        border-radius: 10px;
+        width: 400px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .brands__cards {
+    .container {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      div {
+        margin: 20px 0px;
+        h2 {
+          margin-top: 20px;
+          color: #003072;
+          font-size: 24px;
+          font-family: "Rubik", sans-serif;
+          font-weight: 500;
+        }
+
+        p {
+          margin-top: 15px;
+          margin-bottom: 10px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        button{
+          margin-left: 20px;
+          padding: 7px 30px;
+          border: none;
+          background-color: darkred;
+          border-radius: 7px;
+          cursor: pointer;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
