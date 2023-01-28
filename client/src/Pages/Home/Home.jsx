@@ -16,6 +16,7 @@ const Home = () => {
   const [brands, setBrands] = useState([]);
   const [shownBrands, setShownBrands] = useState([]);
   const [toggle, setToggle] = useState(false);
+  const [sort,setSort] = useState(false)
 
   useEffect(() => {
     axios.get("http://localhost:8080/api/brands").then((response) => {
@@ -26,6 +27,18 @@ const Home = () => {
   useEffect(() => {
     setShownBrands(brands);
   }, [brands]);
+
+
+  function sortBrands(data){
+ 
+      let unSortedData=[]
+      if(data[0].price>data[1].price ){
+        unSortedData= data.sort((a,b)=>a.price-b.price)
+      }else
+      unSortedData= data.sort((a,b)=>b.price-a.price)
+      setShownBrands([...unSortedData])
+    
+  }
 
   return (
     <>
@@ -122,7 +135,9 @@ const Home = () => {
       <div id="brands">
         <div className="brands__header">
           <p>OUR CASE STUDY</p>
-          <div><button>Sort by price</button></div>
+          <div><button onClick={()=>{
+            sortBrands(shownBrands)
+          }}>Sort by price</button></div>
           <h1>We work with global brands</h1>
           <div>
             <input
